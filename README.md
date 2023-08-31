@@ -1,5 +1,5 @@
 # percent-age
-a simple js script to display the current date as a percentage.
+a simple js script website to display the current date as a percentage.
 
 
 to do:
