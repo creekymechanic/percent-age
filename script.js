@@ -11,5 +11,5 @@ window.addEventListener('load', function() {
     var yearText = new Date().getFullYear();
 
     var percentageElement = document.getElementById('percentage'); // Get the #percentage element
-    percentageElement.textContent = yearText + ' is ' + percentage + '% Complete.'; // Set the text content of the element
+    percentageElement.textContent = yearText + ' is ' + percentage + '% complete.'; // Set the text content of the element
 });
