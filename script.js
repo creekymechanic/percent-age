@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
         var currentDate = new Date();
         var totalTime = (endDate - startDate) / 1000; // Convert milliseconds to seconds
         var elapsedTime = (currentDate - startDate) / 1000; // Convert milliseconds to seconds
-        var progress = ((elapsedTime / totalTime) * 100).toFixed(5);
+        var progress = ((elapsedTime / totalTime) * 100).toFixed(6);
         progressBar.style.width = progress + '%';
 
 
