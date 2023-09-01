@@ -2,14 +2,28 @@ window.addEventListener('load', function() {
     var progressBar = document.querySelector('.progress');
     var startDate = new Date(new Date().getFullYear() + '-01-01'); // Specify the start date
     var endDate = new Date(new Date().getFullYear() + '-12-31'); // Specify the end date
-    var currentDate = new Date();
-    var progress = ((currentDate - startDate) / (endDate - startDate)) * 100;
-    progressBar.style.width = progress + '%';
+    
+    function updateProgress() {
+        var currentDate = new Date();
+        var totalTime = (endDate - startDate) / 1000; // Convert milliseconds to seconds
+        var elapsedTime = (currentDate - startDate) / 1000; // Convert milliseconds to seconds
+        var progress = ((elapsedTime / totalTime) * 100).toFixed(5);
+        progressBar.style.width = progress + '%';
 
-    var percentage = Math.round(progress); // Round the progress to the nearest whole number
 
-    var yearText = new Date().getFullYear();
 
-    var percentageElement = document.getElementById('percentage'); // Get the #percentage element
-    percentageElement.textContent = yearText + ' is ' + percentage + '% complete.'; // Set the text content of the element
+        var yearText = new Date().getFullYear();
+        var percentageElement = document.getElementById('percentage'); // Get the #percentage element
+        percentageElement.textContent = yearText + ' is ' + progress + '% complete.'; // Set the text content of the element
+    }
+    
+    // Call the updateProgress function initially
+    updateProgress();
+    
+    // Update the progress every second
+    setInterval(updateProgress, 1000);
 });
+//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////CONFETTI//////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
+
