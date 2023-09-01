@@ -8,6 +8,7 @@ to do:
 - round % text to 1 or 2 decimal points
 - get custom font
 - add drop shaddows
+- slow down inital animation and add ease
 
 maybe:
 - add lots of decimal points so you can see it update in real time (hard)
