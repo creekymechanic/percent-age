@@ -7,7 +7,7 @@ window.addEventListener('load', function() {
         var currentDate = new Date();
         var totalTime = (endDate - startDate) / 1000; // Convert milliseconds to seconds
         var elapsedTime = (currentDate - startDate) / 1000; // Convert milliseconds to seconds
-        var progress = ((elapsedTime / totalTime) * 100).toFixed(6);
+        var progress = ((elapsedTime / totalTime) * 100).toFixed(7);
         progressBar.style.width = progress + '%';
 
 
@@ -21,8 +21,10 @@ window.addEventListener('load', function() {
     updateProgress();
     
     // Update the progress every second
-    setInterval(updateProgress, 1000);
+    setInterval(updateProgress, 10);
 });
+
+
 //////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////CONFETTI//////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
