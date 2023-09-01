@@ -5,7 +5,7 @@
 **to do:**
 
 - make an animation for when it hits the new year
-- get custom font
+- ~get custom font~
 - slow down inital animation and add ease
 - make colour picker sidebar to change theme
 
