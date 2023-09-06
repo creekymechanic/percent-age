@@ -7,7 +7,8 @@
 - make an animation for when it hits the new year
 - ~get custom font~
 - slow down inital animation and add ease
-- make colour picker sidebar to change theme
+- make colour picker footer to change theme
+- add custom cursor
 
 maybe:
 - ~add lots of decimal points so you can see it update in real time~
