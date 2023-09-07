@@ -7,8 +7,10 @@
 - make an animation for when it hits the new year
 - ~get custom font~
 - slow down inital animation and add ease
-- make colour picker footer to change theme
-- add custom cursor
+
+- ~make colour picker sidebar to change theme~
+- fix 69% animation to be styled correctly, and to not exist after 69% (its invisible but can still select it)
+
 
 maybe:
 - ~add lots of decimal points so you can see it update in real time~
