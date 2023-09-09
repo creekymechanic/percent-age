@@ -359,5 +359,39 @@ body {
     }
 
 /***************************/
-/*        confetti         */
+/*       animations        */
 /***************************/
+
+.animation-text{
+    font-family: Helvetica;
+    font-weight: 600;
+    text-align: center; /* Center the text horizontally */
+    position: absolute; /* Enable positioning */
+    top: 50%; /* Position the element at the vertical center */
+    left: 50%; /* Position the element at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the element precisely */
+    color: #ffffff; /* Adjust the text color */
+    font-size: 100px;
+    opacity: 0; /* Hidden initially */
+}
+  
+/* Define the animation */
+@keyframes fadeAndZoom {
+    0% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1,2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1,4);
+    }
+  }
+
+/* Apply animation when 'animate' class is added */
+.animate {
+    animation: fadeAndZoom 4s ease-in-out;
+  }
