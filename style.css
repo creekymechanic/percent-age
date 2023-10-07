@@ -395,3 +395,46 @@ body {
 .animate {
     animation: fadeAndZoom 4s ease-in-out;
   }
+
+
+
+/***************************/
+/*      visit-counter      */
+/***************************/
+
+.visit-text p{
+    font-size: 30px; /* Increase the font size for the heading */
+    color: #78836d;
+    margin: 0; /* Remove any default margin */
+    font-family: 'Helvetica';
+    font-weight: 600;
+    top: 0%;
+}
+
+.visit-text {
+    display: block;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+
+.visit-counter{
+    display: block;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 20px;
+
+    font-size: 30px; /* Increase the font size for the heading */
+    color: #78836d;
+    margin: 0; /* Remove any default margin */
+    font-family: 'Helvetica';
+    font-weight: 600;
+
+}
