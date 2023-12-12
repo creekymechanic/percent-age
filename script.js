@@ -43,8 +43,8 @@ function updateProgress() {
     var percentageElement = document.getElementById('percentage'); // Get the #percentage element
     percentageElement.textContent = yearText + ' is ' + progress + '% complete.'; // Set the text content of the element
 
-    // Check if 'progress' is greater than or equal to 69%
-    if (progress == 69) {
+    // Check if 'progress' is greater than or equal to 100%
+    if (progress == 100) {
         // Add a class to the animation text to start the animation
         document.querySelector('.animation-text').classList.add('animate');
       }
